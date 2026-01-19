@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+body {
+     margin: 0;
+}
+.main_block {
+    background-image: url(/img/Rectangle\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    height: 680px;
+}
+.main_block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 680px;
+    background-color: rgba(221, 34, 17, 0.87);
+    z-index: 1;
+}
+.main_block > * {
+    position: relative;
+    z-index: 2;
+  }
+.cont {
+    width: 1060px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+nav.menu {
+    display: flex;
+    align-items: center; 
+}
+ul.menu_items {
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 540px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+li.menu_item > a {
+    text-decoration: none;
+    color: white;
+    padding: 11px 17px;
+}
+li.menu_item > a:hover  {
+    background-color: rgba(19, 14, 39, 1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main_utp {
+    width: 533px;
+}
+h1 {
+    font-family:"Montserrat";
+    font-weight: 700;
+}
+p {
+    font-family:"PT Serif";
+}
+.main_utp > h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    margin: 50px 0;
+    line-height: 82px;
+    letter-spacing: -2%;
+}
+.main_utp > p {
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: mixed;
+}
+span.main_utp_white {
+    color: white;
+}
+.advantages_elements {
+    display: flex;
+    justify-content: space-between;
+}
+.icon_element {
+    width: 166px;
+    height: auto;
+    text-align: center;
+}
+img.icon_element_img {
+    height: 141px;
+    width: auto;
+    margin-bottom: 46px;
+}
+p.icon_element_description {
+    margin: 0;
+    font-family: "PT Serif";
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -3%;
+}
+h2 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: auto;
+    letter-spacing: -2%;
+    margin: 0;
+}
+h2.advantages_title {
+    margin-bottom: 82px;
+}
+.advantages {
+    margin-top: 50px;
+    margin-bottom: 76px;
+}
+.advantages_title_red {
+    color: rgba(198, 35, 20, 1);
+}
+.story_cont {
+    display: flex;
+    align-items: center;
+    height: 124px;
+    background-color: rgba(19, 14, 39, 1);
+}
+p.story_text {
+    color: white;
+    width: 661px;
+    height: auto;
+}
+.story {
+    display: flex;
+    justify-content: space-between;
+}
+p.story_text {
+    margin: 0;
+    font-family: "PT Serif";
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+button {
+    font-family: "Montserrat";
+    font-size: 22px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white ;
+}
+button.story_button {
+    width: 270px;
+    height: 64px;
+    background-color: rgba(198, 35, 20, 1);
+    transition: background-color 250ms ease-in-out;
+}
+button.story_button:hover {
+    background-color: rgba(221, 34, 17, 1);
+    cursor: pointer;
+}
+section.prices {
+    background-color: rgba(239, 239, 239, 1);
+}
+h2.price_title {
+    text-align: center;
+    padding: 51px 0;
+}
+div.price_articles {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+article.price_article {
+    text-align: center;
+    background-color: #fff;
+    width: 340px;
+    height: 460px;
+    border-radius: 5px;
+}
+h3.price_subtitle {
+    margin: 35px 0;
+    font-family: "PT Serif";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -3%;
+    color: rgba(22, 22, 22, 1);
+}
+span.value {
+    color: rgba(198, 35, 20, 1);
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -2%;
+}
+ul.includes {
+    padding: 0;
+    margin: 35px 0;
+}
+ul.includes > li {
+    list-style: none;
+    font-family: "PT Serif";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -3%;
+    color: rgba(22, 22, 22, 1);
+}
+button.bid {
+    width: 205px;
+    height: 50px;
+    background-color: rgba(19, 14, 39, 1);
+    transition: background-color 250ms ease-in-out;
+}
+button.bid:hover {
+    background-color: rgba(198, 35, 20, 1);
+    cursor: pointer;
+}
+footer {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(19, 14, 39, 1);
+}
+div.footer_elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: "PT Serif";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: white
+}
+a.referal {
+    text-decoration: none;
+    color: rgba(198, 35, 20, 1);
+}
